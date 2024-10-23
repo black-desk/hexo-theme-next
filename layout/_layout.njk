@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
+<link rel="stylesheet" media="all" href="//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css">
 <head>
   {{ partial('_partials/head/head.njk', {}, {cache: theme.cache.enable}) }}
   {%- include '_partials/head/head-unique.njk' -%}
@@ -49,4 +50,5 @@
 
   {{- next_inject('bodyEnd') }}
 </body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.js"></script>
 </html>
