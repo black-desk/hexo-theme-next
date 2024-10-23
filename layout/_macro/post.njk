@@ -62,7 +62,7 @@
     {#################}
     {### POST BODY ###}
     {#################}
-    <div class="han-init-context post-body{% if post.direction and post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
+    <div class="post-body{% if post.direction and post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
       {%- if is_index %}
         {%- if post.description and theme.excerpt_description %}
           <p>{{ post.description }}</p>

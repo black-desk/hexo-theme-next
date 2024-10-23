@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
 <head>
-  <link rel="stylesheet" media="all" href="//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css">
   {{ partial('_partials/head/head.njk', {}, {cache: theme.cache.enable}) }}
   {%- include '_partials/head/head-unique.njk' -%}
   <title>{% block title %}{% endblock %}</title>
@@ -51,4 +50,7 @@
   {{- next_inject('bodyEnd') }}
 </body>
 <script src="//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.js"></script>
+<script>
+Han( document.querySelector( '.post-body' )).render()
+</script>
 </html>
