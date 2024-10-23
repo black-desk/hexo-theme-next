@@ -44,6 +44,7 @@
     "stylelint-stylus": "1.0.0"
   },
   "dependencies": {
-    "han-css": "^3.3.0"
+    "han-css": "^3.3.0",
+    "hexo-stylus-import-from-node-moduels": "black-desk/hexo-stylus-import-from-node-modules"
   }
 }
